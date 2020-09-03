@@ -5,6 +5,26 @@ DO500 <!-- {_class="title-color"} -->
 
 
 
+## Exercise - What is Automated Testing?...
+_Answer the question "What is Automated Testing?"_
+1. Everyone grab one sticky note.
+2. Answer the question "What is Automated Testing?" with one or two words that first
+come to mind.
+3. Add your sticky to the wall.
+
+
+
+<!-- .slide: data-transition="fade-in slide-out" -->
+## Automated Testing is...
+
+                              TDD
+
+                                                                           Test Automation
+
+                                            Unit Test
+
+
+
 <!-- .slide: id="tdd" -->
 ## Test Driven Development
 
@@ -35,21 +55,72 @@ This practice is particularly powerful when combined with
 
 
 
+<!-- .slide: id="atest" -->
+## Test Automation
+
+
+
+![Test-Automation](images/test-automation.png) 
+
+
+### Test Automation
+#### _What Is It?_
+Test automation allows teams to remove the slow and manual testing cycles related to software development. 
+Test automation can include such things as:
+
+* Static code analysis
+* Linting
+* Unit tests
+* End-to-end tests
+* Security tests
+
+This practice is particularly powerful when combined with
+**Continuous Integration**.
+
+
+
+### Test Automation 
+#### _Why do Test automation?_
+* It increases the code quality.
+* It shortens feedback loops.
+* It tells if your change broke some previously working code.
+
+
+
+### Test Automation 
+#### _How to do Test automation?_
+These tests are typically executed by a build automation tool, for example Jenkins. 
+Easy and quick tests should be ran right after building (compiling) your application, such as unit tests and static code analysis. 
+Also many of these tests can be run in parallel, decreasing the overall time taken to run the tests.
+
+
+
+
 <!-- .slide: id="revenge-automated-testing" -->
 ## Revenge of the Automated Testing
-### Part 1
 
 
 
-### Lab Exercise 3: Revenge of the Automated Testing
+### Lab Demo 3: Revenge of the Automated Testing
 This lab helps us:
-* Understand the "why" behind Test Driven Development (TDD)
-* Implement a feature using TDD for the front end and back end of the application
-* Write end-to-end tests for a feature and run them through continuous integration
+* Understand the "why" behind Test Automation in general
+* Show and Review how we can easily automate UI testing that has traditionally being done by human beings during User acceptance testing
 
 
 
-### What new Tools and Frameworks will we use?
+### Tools and Frameworks that can be used?
+This depends on how language use and what is being tested. 
+For example when building with python some of the tools that can be used are
+* **Pytest**: small python testing utility that can be used both for small unit tests as well as functional tests.
+* **Robot Framework**: Generic open source automation framework. It is a tool that can be used to conduct UI and functional testing.
+Tests can be written using human readable keywords in an easy to use syntax.  
+* **Sonarqube**: Tool that can be used to improve code quality and security scan. It can assist with several static analysis concerns 
+like linting, security scan of source code and many more ...
+* **Anchore**: Tool used for continuous security and compliance scanning of containers (images and runtimes)
+* **Fortify**: Similar to Anchore, it is a tool used for automated application security scan. 
+* **OpenScap**: Open Source tool that works similar to Anchore and Fortify. It is used to assess, remediate and enforce security baseline.
+
+When building with nodejs or other javascript based framework here are some tools tht can also be used
 * **Jest**: zero configuration testing platform to test JavaScript code
 * **Vue Test Utils**: the official testing utility library for Vue.js
 * **Nightwatch.js**: easy to use Node.js based end-to-end testing solution for
@@ -62,136 +133,32 @@ any unit testing framework
 
 
 
-### The Big Picture
-![BP3](images/tdd/bp-3-revenge-automated-testing.jpg)
-
-
-
 ### Let's Go!!!
-Lab Exercise 3: _Revenge of the Automated Testing_
-Part 1
-
-
-
-<!-- .slide: id="revenge-automated-testing-part-2" -->
-## Revenge of the Automated Testing
-### Part 2
-Test Driven Development (TDD) in LEGO
-
-Credit to [Gargoyle Software](http://www.gargoylesoftware.com/ex/lego_tdd)
-
+Lab Demo 3: _Revenge of the Automated Testing_
 
 
 ### Intent
-Demonstrate the concepts behind TDD.
-
-How we write the test before we write code and how that forces our design to emerge.
+Demonstrate/Review the Jenkins output of an automated test run using a Robo Framework container.
 
 
-
-### TDD Lifecylce
-![TDD-Simplified](https://i0.wp.com/s3.amazonaws.com/production-wordpress-assets/blog/wp-content/uploads/2017/04/11100523/TDD.jpg?zoom=2&fit=400%2C237&ssl=1)
-
-Red - Write a small test that fails <!-- {_class="fragment"  data-fragment-index="1"} -->
-
-Green - Do the minimum to make the test pass <!-- {_class="fragment"  data-fragment-index="2"} -->
-
-Refactor - Eliminate duplication & make it beautiful <!-- {_class="fragment"  data-fragment-index="3"} -->
+### Some annecdotes of when Automated testing or TDD was not done or well done 
 
 
 
-### TDD Lifecycle
-![Circle of life](https://media.giphy.com/media/DvMHwFYLVHlZe/giphy.gif)  <!-- {_class="" style="height:450px"} -->
-
-
-
-### Prepare your environment
-Our program is made of Lego. Get your equipment ready for coding
-![lego-space](https://media.gizmodo.co.uk/wp-content/uploads/2018/09/lego-620x349.jpg)
-
-
-
-### 2 Simple Rules for Lego TDD
-KISS - Keep It Simple Stupid  <!-- {_class="fragment"  data-fragment-index="1"} -->
-
-YAGNI - You Ain't Gonna Need It!  <!-- {_class="fragment"  data-fragment-index="2"} -->
-
-![simple-house](images/Simple-Lego-home.jpg)  <!-- {_class="fragment"  data-fragment-index="1" style="height:250px"} -->
-![complex-house](http://www.abc.net.au/news/image/7370406-3x2-940x627.jpg)  <!-- {_class="fragment" style="height:250px"  data-fragment-index="2"} -->
-
-
-
-### Pair Builds
-![pairs](https://i.ebayimg.com/images/g/pfgAAOSw3NtbJ57f/s-l1600.jpg) <!-- {_class="" style="height:450px"} -->
-
-
-
-### The Steps
-1. One person in the pair will write a test, in the form of a question, on a sticky note and place it on the table. For example "Is there a person?" <!-- {_class="fragment"  data-fragment-index="1"} -->
-2. The other person will then implement something in LEGO that passes that test<!-- {_class="fragment"  data-fragment-index="2"} -->
-3. When the first person is satisfied that the test is passing, they switch positions.<!-- {_class="fragment"  data-fragment-index="3"} -->
-4. Now the second person writes a test and puts it on the table and the first person implements in LEGO. <!-- {_class="fragment"  data-fragment-index="4"} -->
-
-
-
-### Some example tests
-
-![TDD](images/tdd/lego-tdd-1.jpg) <!-- {_class="inline-image"} -->
-- Is there a person in the program?
-- Is there a house in the program? <!-- {_class="fragment"  data-fragment-index="1"} -->
-- Is there a window on a wall of the house?<!-- {_class="fragment"  data-fragment-index="2"} -->
-- Is it true that the house is taller than the person? <!-- {_class="fragment"  data-fragment-index="3"} -->
-- The house is wider than the person? <!-- {_class="fragment"  data-fragment-index="3"} -->
-- Is it true that the house has 2 connected walls <!-- {_class="fragment"  data-fragment-index="4"} -->
-- Can the person enter the house? <!-- {_class="fragment"  data-fragment-index="5"} -->
-
-
-
-### The Game Begins!
-
- - The business requirement is to include the following in our program:
-       1. a person
-       2. an animal
-       3. a plant
-       4. a vehicle
-       5. a building.
- - There may only be one "broken" test at a time. All previous tests must continue to pass.  <!-- {_class="fragment"  data-fragment-index="1"} -->
- - Nothing must be built in LEGO if there wasn't a failing test that forced that to exist. <!-- {_class="fragment"  data-fragment-index="2"} -->
- - After each test is passing, the people switch roles. <!-- {_class="fragment"  data-fragment-index="4"} -->
-
-
-
-### Debrief
+### Audience Experience and Anecdotes 
 <!-- speaker info
 Sometimes people will build something new that breaks an existing test and they either won't have noticed or won't have cared. If this is the case then discuss why tests must always be passing.
 
 Generally not everyone will have done this. They'll be so busy creating interesting requirements that they don't have time to build the five things that the customer actually asked for. Discuss this.
 
-Have each pair demo two or three of their features. Have them read out the test first and then point out how that was implemented in their model. Stress the fact that if there isn't a test for a given feature, we don't care about it.
 Many times people will have built cool things that they didn't have tests for. We stress again that in TDD, we don't build anything until the test has forced us to do that.
 
  -->
- - What did you observe? How did that feel?
- - Did everyone complete the five base requirements listed above?
- - Are all tests currently passing?
+ - What was your experience with Test Automation? How did that feel?
+ - How can some of the topics and tools discussed here be used on your projects?
 
 
-
-### Team Builds
-![teams-at-work](https://www.businessdevelopmentcompany.co.nz/wp-content/uploads/2017/07/Being-a-team-member-768x510.jpg)
-
-
-
-### The Game Begins Again!
-
-![TDD](images/tdd/lego-tdd-2.png) <!-- {_class="inline-image" style="height:500px"} -->
- - As a table; Pick a project to build. Projects should be something complex that has lots of different kinds of things in it. Some examples if you're stuck could include _A Zoo_, _Shopping Center_, _a spaceship_ or _a city_.
- - All tests at the table must continue to pass at all times, regardless of which pair wrote them.  <!-- {_class="fragment"  data-fragment-index="1"} -->
- - This time is that the implementation has to be integrated with the main project in the center of the table. <!-- {_class="fragment"  data-fragment-index="2"} -->
-
-
-
-### Debrief
+### Audience Experience and Anecdotes 
 
 <!-- Speaker notes
 
@@ -212,10 +179,7 @@ Was your final design different than you expected? Discuss.
 
 
 
-## A Little Competition
-
-
-
 <!-- .slide: data-background-image="images/chef-background.png", class="white-style" -->
 ### DevOps practices used in this section:
 - [Test Driven Development](https://openpracticelibrary.com/practice/test-driven-development/)
+- [Test Automation](https://openpracticelibrary.com/practice/test-automation/)
