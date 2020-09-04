@@ -55,12 +55,12 @@ This practice is particularly powerful when combined with
 
 
 
-<!-- .slide: id="atest" -->
 ## Test Automation
 
 
 
 ![Test-Automation](images/test-automation.png) 
+
 
 
 ### Test Automation
