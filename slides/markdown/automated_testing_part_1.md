@@ -56,9 +56,6 @@ This practice is particularly powerful when combined with
 
 
 ## Test Automation
-
-
-
 ![Test-Automation](images/test-automation.png) 
 
 
