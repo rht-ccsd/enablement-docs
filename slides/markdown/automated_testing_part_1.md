@@ -77,15 +77,16 @@ This practice is particularly powerful when combined with
 
 
 ### Test Automation 
-#### _Why do Test automation?_
+#### _Why do Test Automation?_
 * It increases the code quality.
 * It shortens feedback loops.
 * It tells if your change broke some previously working code.
+* It reduces or eliminates manual steps and frees up resource for other types of testing.
 
 
 
 ### Test Automation 
-#### _How to do Test automation?_
+#### _How to do Test Automation?_
 These tests are typically executed by a build automation tool, for example Jenkins. 
 Easy and quick tests should be ran right after building (compiling) your application, such as unit tests and static code analysis. 
 Also many of these tests can be run in parallel, decreasing the overall time taken to run the tests.
@@ -106,8 +107,8 @@ This lab helps us:
 
 
 ### Tools and Frameworks that can be used?
-This depends on how language use and what is being tested. 
-For example when building with python some of the tools that can be used are
+This depends on programming languages and platform but here are some examples. 
+For Python here are some tools that can be used
 * **Pytest**: small python testing utility that can be used both for small unit tests as well as functional tests.
 * **Robot Framework**: Generic open source automation framework. It is a tool that can be used to conduct UI and functional testing.
 Tests can be written using human readable keywords in an easy to use syntax.  
@@ -117,7 +118,10 @@ like linting, security scan of source code and many more ...
 * **Fortify**: Similar to Anchore, it is a tool used for automated application security scan. 
 * **OpenScap**: Open Source tool that works similar to Anchore and Fortify. It is used to assess, remediate and enforce security baseline.
 
-When building with nodejs or other javascript based framework here are some tools tht can also be used
+
+
+### Tools and Frameworks that can be used?
+For Nodejs or other Javascript based frameworks here are some tools that can also be used
 * **Jest**: zero configuration testing platform to test JavaScript code
 * **Vue Test Utils**: the official testing utility library for Vue.js
 * **Nightwatch.js**: easy to use Node.js based end-to-end testing solution for
@@ -134,8 +138,10 @@ any unit testing framework
 Lab Demo 3: _Revenge of the Automated Testing_
 
 
+
 ### Intent
 Demonstrate/Review the Jenkins output of an automated test run using a Robo Framework container.
+
 
 
 ### Some annecdotes of when Automated testing or TDD was not done or well done 
@@ -151,28 +157,9 @@ Generally not everyone will have done this. They'll be so busy creating interest
 Many times people will have built cool things that they didn't have tests for. We stress again that in TDD, we don't build anything until the test has forced us to do that.
 
  -->
- - What was your experience with Test Automation? How did that feel?
+ - What was your experience with Test Automation? 
+ - How did that feel?
  - How can some of the topics and tools discussed here be used on your projects?
-
-
-### Audience Experience and Anecdotes 
-
-<!-- Speaker notes
-
-What did you observe?
-A wide open question like this will often bring out observations we didn't anticipate.
-Look around your table. Are all the tests still passing? If not, discuss.
-Often people will now realize that something is broken and they hadn't noticed. This can lead into a discussion of continuous integration servers.
-Are there tests that you should have that are missing?
-Once a team built a zoo and then didn't complete the fencing around the lion enclosure. Perhaps they'd needed a test to ensure the lions couldn't get out to eat all the other animals.
-Did you have any conflicts where a new feature from one pair broke a test from another? What did you do about that?
-Was your final design different than you expected? Discuss.
- -->
- - What did you observe?
- - Look around your table. Are all the tests still passing?
- - Are there tests that you should have that are missing?
- - Did you have any conflicts where a new feature from one pair broke a test from another? What did you do about that?
- - Was your final design different than you expected?
 
 
 
