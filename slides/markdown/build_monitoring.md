@@ -33,8 +33,8 @@ Build monitors allow the visualization of automated build processes.
 
 
 
-### Lab Exercise 6: Return of the Monitoring
-In this exercise we will be creating a build monitor to display all of our jobs
+### Lab Demo 6: Return of the Monitoring
+In this demo we will be creating a build monitor to display all of our jobs
 in one visual display as well as pipeline views. We will then add the cause of
 build failures for each job to the monitors. This will allow you to rapidly
 see why a particular build is failing and fix it faster.
@@ -57,7 +57,19 @@ pipelines with stage information
 
 
 ### Let's Go!!!
-Lab Exercise 6: _Return of the Monitoring_
+Lab Demo 6: _Return of the Monitoring_
+
+
+
+### Intent
+Demonstrate/Show how to create build monitors to provide tight feedback to the teams.
+
+
+
+### Audience Experience and Anecdotes 
+- What was your experience with Information Radiator in general and build monitors in particular?
+- How did that feel?
+- How can apply this idea to make the outcome of the build visible to the team and visitors in your organization and projects?
 
 
 
